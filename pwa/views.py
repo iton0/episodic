@@ -6,7 +6,7 @@ from pwa.utils import search_movies
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello from pwa index.")
+    return render(request, "pwa/index.html")
 
 
 def movie_search(request):
