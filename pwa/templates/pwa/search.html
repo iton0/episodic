@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Movie Search</title>
+    <title>Episodic | Search</title>
 </head>
 <body>
-    <h1>Movie Search Results</h1>
-    <form method="GET" action="{% url 'movie_search' %}">
+    <h1>put a magnifying glass or episodic logo here</h1>
+    <form method="GET" action="{% url 'search' %}">
         <input type="text" name="query" value="{{ query|default:'' }}">
         <button type="submit">Search</button>
     </form>
-    {% if movies %}
+    {% if medias %}
         <h2>Results for "{{ query }}"</h2>
         <ul>
-            {% for movie in movies %}
+            {% for media in medias %}
                 <li>
-                    <h3>{{ movie.title }} ({{ movie.release_date|slice:":4" }})</h3>
-                    {% if movie.poster_path %}
-                        <img src="{{ movie.poster_path }}" alt="{{ movie.title }} Poster" width="150">
+                    <h3>{{ media.title }} ({{ media.release_date|slice:":4" }})</h3>
+                    {% if media.poster_path %}
+                        <img src="{{ media.poster_path }}" alt="{{ media.title }} Poster" width="150">
                     {% else %}
                         <p>No poster available</p>
                     {% endif %}
@@ -24,7 +24,7 @@
             {% endfor %}
         </ul>
     {% elif query %}
-        <p>No movies found for "{{ query }}".</p>
+        <p>No results found for "{{ query }}".</p>
     {% endif %}
 </body>
 </html>
