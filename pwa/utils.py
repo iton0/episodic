@@ -6,8 +6,7 @@ def multi_search(query):
     # NOTE: the fields for movies and tv shows are not the same
     # TODO: query all the information wanted for movies/tv. consult with api
     # reference for both movies, tv, and mutli https://developer.themoviedb.org/reference/intro/getting-started
-    import tmdbsimple as tmdb
-    from django.conf import settings
+    # will need to append additional information https://developer.themoviedb.org/docs/append-to-response
 
     search = tmdb.Search()
     tmdb.API_KEY = settings.TMDB_API_KEY
