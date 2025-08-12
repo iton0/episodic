@@ -1,7 +1,7 @@
 - [x] integrate tmdb with pwa app
 - [x] use .env for a keys and secrets (security related)
 - [x] use a secret manager (infisical) to manage .env
-- [ ] create a database to hold local user data
+- [x] create a database to hold local user data
         - the user will query for the data first check local and then make
           second api to tmdb to get it
 - [ ] create a login page that should go to either:
