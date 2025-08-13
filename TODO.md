@@ -2,11 +2,11 @@
 - [x] use .env for a keys and secrets (security related)
 - [x] use a secret manager (infisical) to manage .env
 - [x] create a database to hold local user data
-        - the user will query for the data first check local and then make
+  - [ ] the user will query for the data first check local and then make
           second api to tmdb to get it
 - [ ] create a login page that should go to either:
-        - view/page for me (full app)
-        - another for guest so that they can see a sample of what it does
+  - [ ] view/page for me (full app)
+  - [ ] another for guest so that they can see a sample of what it does
           (limited app with full features ie should just grab top trending
           movies shows)
 - [ ] integrate tailwind css for styling
