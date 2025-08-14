@@ -1,5 +1,7 @@
 # Episodic
 A movie/tv tracker PWA
+>[!CAUTION]
+> This is being actively developed
 
 ## Features
 
