@@ -5,8 +5,8 @@ A movie/tv tracker PWA
 
 ## Features
 
-## Development
-PRs are welcome! Please check out the [DEVELOPMENT.md](DEVELOPMENT.md) before
+## Contributing
+PRs are welcome! Please check out the [CONTRIBUTING.md](CONTRIBUTING.md) before
 getting started.
 
 ## Credits
